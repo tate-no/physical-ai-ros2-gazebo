@@ -1,0 +1,7 @@
+Camera Burger: burger_camera_main x=0 y=0 z=0.05
+Red box: red_box x=3 y=0 z=0.1
+Blue box: blue_box x=3 y=1 z=0.1
+Yellow box: yellow_box x=3 y=-1 z=0.1
+Camera topic: /burger_camera/color_camera/image_raw
+Control topic: /burger_test/cmd_vel
+Gazebo: ROS 2 Humble / Gazebo Classic
