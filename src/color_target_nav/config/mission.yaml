@@ -1,0 +1,19 @@
+color_target_nav:
+  ros__parameters:
+    targets: [RED, BLUE, YELLOW]
+    repeat: true
+    target_timeout: 300.0
+    sensor_timeout: 0.7
+    image_topic: /burger_camera/color_camera/image_raw
+    scan_topic: /scan
+    odom_topic: /burger_test/odom
+    contact_topic: /color_nav/contacts
+    cmd_topic: /color_nav/desired_cmd
+    horizontal_fov: 1.57
+    min_area: 80.0
+    space_confirm_scans: 3
+    automatic_retries: 2
+    retry_wait: 3.0
+    retry_window: 30.0
+    vision_confirm_frames: 3
+    recovery_timeout: 90.0

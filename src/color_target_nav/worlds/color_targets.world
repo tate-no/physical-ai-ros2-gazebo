@@ -1,0 +1,65 @@
+<sdf version="1.6"><world name="color_targets"><include><uri>model://sun</uri></include><include><uri>model://ground_plane</uri></include><physics name="default_physics" type="ode" /><model name="red_box">
+    <static>true</static>
+    <pose>3 0 0.1 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+<model name="blue_box">
+    <static>true</static>
+    <pose>3 0.8 0.1 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+        <material>
+          <ambient>0 0 1 1</ambient>
+          <diffuse>0 0 1 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+<model name="yellow_box">
+    <static>true</static>
+    <pose>3 -0.8 0.1 0 0 0</pose>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box><size>0.2 0.2 0.2</size></box>
+        </geometry>
+        <material>
+          <ambient>1 1 0 1</ambient>
+          <diffuse>1 1 0 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+<model name="gray_obstacle"><static>true</static>
+  <pose>1.5 0.8 0.15 0 0 0</pose><link name="link">
+  <collision name="collision"><geometry><box><size>0.3 0.3 0.3</size></box></geometry></collision>
+  <visual name="visual"><geometry><box><size>0.3 0.3 0.3</size></box></geometry>
+  <material><ambient>0.4 0.4 0.4 1</ambient></material></visual></link></model></world></sdf>
