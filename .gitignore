@@ -8,3 +8,11 @@ __pycache__/
 *.pem
 *.key
 *.tar.gz
+
+# Local submission materials and screen recordings are not public source.
+/submission/
+/recordings/
+/work/
+*.mp4
+*.avi
+*.mkv
